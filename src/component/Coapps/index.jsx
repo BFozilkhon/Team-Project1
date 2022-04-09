@@ -16,7 +16,6 @@ const Coapps = () => {
             <Card.Text>{v.text}</Card.Text>
           </Card>
         })}
-
       </Cards>
     </Container>
   )

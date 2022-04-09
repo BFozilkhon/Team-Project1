@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as arrowmini } from "../../assets/icons/arrow-right.svg";
+import { ReactComponent as arrowmini } from "../../assets/icons/arrow.svg";
 
 export const Container = styled.div`
   width: 100%;
@@ -8,13 +8,14 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 `
+
 export const Name = styled.div`
   display: flex;
   align-items: center;
   margin: 10px 0 40px 0;
   justify-content: space-between;
   padding: 0 2%;
-@media screen and (max-width: 767px)  { flex-direction: column; text-align: center;  justify-content: center; align-items: center}
+  @media screen and (max-width: 767px)  { flex-direction: column; text-align: center;  justify-content: center; align-items: center}
 `
 Name.Title = styled.div`
   left: 0px;
@@ -34,24 +35,23 @@ Name.Next = styled.div`
   font-size: 24px;
   line-height: 136.02%;
   color: #CBD5E0;
-@media screen and (max-width: 767px)  { width: 100%; text-align: center;  justify-content: center; align-items: center}
+  @media screen and (max-width: 767px)  { width: 100%; text-align: center;  justify-content: center; align-items: center}
 `
+
 export const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 `
+
 export const Card = styled.div`
   width: 273px;
   height: 320px;
   margin: 10px 2% 60px 2%;
   padding: 35px, 40px, 35px, 40px;
   border-radius: 12px;
-.coaaps{
-  background-repeat: no-repeat;
-  background-size: contain;
-}
+  .coaaps{background-repeat: no-repeat; background-size: contain;}
 `
 Card.Img = styled.div`
   width: 100%;
@@ -109,9 +109,9 @@ Card.Text = styled.div`
   font-feature-settings: 'salt' on;
   color: #A6B7D4;
 `
-export const ArrowMini = styled(arrowmini)`
-width: 20px;
-height: 20px;
-margin: 0 0 0 25px;
 
+export const ArrowMini = styled(arrowmini)`
+  width: 20px;
+  height: 20px;
+  margin: 0 0 0 25px;
 `
