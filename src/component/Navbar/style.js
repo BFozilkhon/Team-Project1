@@ -2,7 +2,9 @@ import styled from "styled-components";
 import { ReactComponent as logo } from "../../assets/icons/logo.svg";
 
 export const Container = styled.div`
-  width: 90%;
+  width: 100%;
+  padding: 0 2%;
+  max-width: 1920px;
   display: flex;
   align-items: center;
   justify-content: space-between;

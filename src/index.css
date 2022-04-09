@@ -8,7 +8,9 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-
+::-webkit-scrollbar { width: 7px;height: 0px;}
+::-webkit-scrollbar-thumb {background: transparent;}
+::-webkit-scrollbar-thumb:hover {background: #6495ED;}
 body {
   background: #0a0822;
 }

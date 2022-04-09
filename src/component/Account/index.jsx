@@ -22,7 +22,7 @@ const Products = () => {
                 <img src={v.img} className='account-img' />
                 <Produc.Name a={i % 1 === 0} b={i % 2 === 0} c={i % 3 === 0}>{v.header}</Produc.Name>
                 <Produc.Text>{v.text}</Produc.Text>
-                <Produc.Btn>{v.btn}</Produc.Btn>
+                <a href="https://www.yoqut.uz/">   <Produc.Btn>{v.btn}</Produc.Btn></a>
               </Produc.Card>
             })}
           </Produc>

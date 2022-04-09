@@ -101,13 +101,9 @@ Produc.Btn = styled.div`
   margin: 0 2px;
   margin-top: auto;
   cursor: pointer;
+  transition: all .5s;
   :hover{
-  background:  
-    radial-gradient(90.16% 143.01% at 15.32% 21.04%, 
-    rgba(224, 249, 255, 0.2) 0%, 
-    rgba(110, 191, 244, 0.0447917) 64.58%, 
-    rgba(70, 144, 213, 0) 100%);
-  }
+  background: rgba(255,255,255,.2)}
   @media screen and (max-width: 1500px)  {width: 200px; font-size: 12px; }
   @media screen and (max-width: 1000px)  {width: 350px; font-size: 20px; margin-bottom: 50px}
   @media screen and (max-width: 767px)  {width: 200px; font-size: 12px; margin-bottom: 70px}
