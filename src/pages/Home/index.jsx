@@ -5,6 +5,7 @@ import Account from "../../component/Account";
 import Partners from "../../component/Partners";
 import Navbar from "../../component/Navbar";
 import { Container } from "./style";
+import { Footer } from "../../component/Footer";
 export const Home = () => {
   return (
     <Container>
@@ -13,6 +14,7 @@ export const Home = () => {
       <Prouct />
       <Account />
       <Partners />
+      <Footer/>
     </Container>
   );
 };
