@@ -55,7 +55,7 @@ margin-bottom: 22px;
 font-size: 36px;
 line-height: 136.02%;
 color: #FFFFFF;
-@media screen and (max-width: 1336px)  {font-size: 30px;}
+@media screen and (max-width: 1366px)  {font-size: 30px;}
 @media screen and (max-width: 1150px)  {font-size: 25px;}
 @media screen and (max-width: 1000px)  {font-size: 30px; margin-bottom: 0px}
 `
@@ -69,7 +69,7 @@ align-items: flex-end;
 color: #CBD5E0;
 flex-grow: 0;
 margin-bottom: 30px;
-@media screen and (max-width: 1336px)  {font-size: 14px;}
+@media screen and (max-width: 1366px)  {font-size: 14px;}
 @media screen and (max-width: 1150px)  {font-size: 12px;}
 @media screen and (max-width: 1000px)  {font-size: 20px;}
 `

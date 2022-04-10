@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import {ReactComponent as footerIcon}  from "../../assets/icons/logo-footer.svg";
-import {ReactComponent as send}  from "../../assets/icons/send.svg";
-import {ReactComponent as instagram}  from "../../assets/icons/instagram.svg";
-import {ReactComponent as circle}  from "../../assets/icons/circle.svg";
-import {ReactComponent as twitter}  from "../../assets/icons/twitter.svg";
-import {ReactComponent as m}  from "../../assets/icons/m.svg";
-import {ReactComponent as figma}  from "../../assets/icons/figma.svg";
+import { ReactComponent as footerIcon } from "../../assets/icons/logo-footer.svg";
+import { ReactComponent as send } from "../../assets/icons/send.svg";
+import { ReactComponent as instagram } from "../../assets/icons/instagram.svg";
+import { ReactComponent as circle } from "../../assets/icons/circle.svg";
+import { ReactComponent as twitter } from "../../assets/icons/twitter.svg";
+import { ReactComponent as m } from "../../assets/icons/m.svg";
+import { ReactComponent as figma } from "../../assets/icons/figma.svg";
 
 export const Container = styled.div`
   max-width: 1920px;
@@ -22,6 +22,9 @@ width: 200px;
 export const Card = styled.div`
 width: 100%;
 padding: 1%;
+flex: ${({ a }) => a && '1'};
+flex: ${({ b }) => b && '0.9'};
+flex: ${({ c }) => c && '0.7'};
 `
 Card.A = styled.div`
 display: flex;
@@ -44,14 +47,34 @@ color: #FFFFFF;
 `
 Card.Container = styled.div`
 display: flex;
-justify-content: center;
+margin: ${({ a }) => a && '0 50px'};
+justify-content: space-around;
 `
 
-
+Card.Input = styled.div`
+width: 100%;
+height: 40px;
+display: flex;
+margin-right: 100px;
+background: #191D2A;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+input{
+  width: 100%;
+  height: 40px;
+  border: none;
+  padding: 0 10px;
+  color: #fff;
+  outline: none;
+  background: transparent;
+  font-size: 20px;
+}
+`
 Card.Category = styled.div`
-width: 50%
+width: 50%;
 display: block;
 color: white;
+
 align-item: center;
 padding: 5px;
 `
@@ -70,16 +93,20 @@ border: none;
 color:white
  `
 
-export const Btn = styled.button`
+export const Btn = styled.div`
 background: #D8D8D880;
 cursor: pointer;
 display: flex;
-width: 50px;
-height: 40px;
 justify-content: center;
 align-items: center;
+width: 50px;
+height: 40px;
 border-top-right-radius: 10px;
 border-bottom-right-radius: 10px;
+img{
+  width: 35px;
+  height: 35px;
+}
 `
 
 export const Instagram = styled(instagram)`
