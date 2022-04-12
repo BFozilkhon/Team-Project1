@@ -9,11 +9,13 @@ import {
   Header,
   BgImg,
   CardWrapper,
-  UpArrow,
+  // UpArrow,
 } from "./style";
+import Navbars from "../../component/Header/Navbar";
 export const WhitePaper = () => {
   return (
     <Container>
+      <Navbars/>
       <Header>
         <Container.Title>FOR CREATORS</Container.Title>
         <Wrapper>
@@ -24,7 +26,7 @@ export const WhitePaper = () => {
                 <Card.Title>{value.title}</Card.Title>
                 <CardWrapper>
                   <CardWrapper.Text>{value.text}</CardWrapper.Text>
-                  <UpArrow />
+                  {/* <UpArrow /> */}
                 </CardWrapper>
               </Card>
             );
