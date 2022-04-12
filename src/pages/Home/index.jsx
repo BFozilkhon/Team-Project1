@@ -6,7 +6,7 @@ import Partners from "../../component/Partners";
 import Navbar from "../../component/Navbar";
 import About from "../../component/About";
 import { Container } from "./style";
-import { Footer } from "../../component/Footer";
+import Footer from "../../component/Footer";
 export const Home = () => {
   return (
     <Container>
@@ -16,7 +16,7 @@ export const Home = () => {
       <Prouct />
       <Account />
       <Partners />
-      <Footer/>
+      <Footer />
     </Container>
   );
 };
