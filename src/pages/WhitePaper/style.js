@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import {ArrowUpRight} from '@styled-icons/bootstrap/ArrowUpRight'
+// import {ArrowUpRight} from '@styled-icons/bootstrap/ArrowUpRight'
+
 export const Container = styled.div`
 background: #28272E;
 width:100%;
@@ -102,12 +103,12 @@ color: #FFFFFF;
 }
 `
 
-export const UpArrow=styled(ArrowUpRight)`
-width:35px;
-height:35px;
-color: white;
-margin-left:auto ;
-`
+// export const UpArrow = styled(ArrowUpRight)`
+// width:35px;
+// height:35px;
+// color: white;
+// margin-left:auto ;
+// `
 export const Header=styled.div`
 margin-bottom:5% ;
 `
