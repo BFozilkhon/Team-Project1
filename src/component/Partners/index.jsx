@@ -3,7 +3,7 @@ import { data } from '../../mock/card'
 import { Container, Cards, Card, Name, ArrowMini } from './style'
 const Coapps = () => {
   return (
-    <Container>
+    <Container id='about'>
       <Name><Name.Title>Partners & Investor</Name.Title><Name.Next>learn more <ArrowMini /></Name.Next></Name>
 
       <Cards>

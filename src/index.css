@@ -12,5 +12,6 @@
 ::-webkit-scrollbar-thumb {background: transparent;}
 ::-webkit-scrollbar-thumb:hover {background: #6495ED;}
 body {
+  scroll-behavior: smooth;
   background: #0a0822;
 }

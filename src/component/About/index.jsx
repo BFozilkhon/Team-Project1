@@ -1,9 +1,9 @@
 import React from "react";
-import  aboutpng  from "../../assets/imgs/about.png";
+import aboutpng from "../../assets/imgs/about.png";
 import { Container, Left, Right } from "./style";
 const About = () => {
   return (
-    <Container>
+    <Container id="developer">
       <Left>
         <Container.Title>
           What is <span style={{ color: "#4C6FFF" }}> Create Protocol</span>
@@ -21,7 +21,7 @@ const About = () => {
         </Left.Text>
       </Left>
       <Right>
-        <Right.Img  src={aboutpng}/>
+        <Right.Img src={aboutpng} />
       </Right>
     </Container>
   );
