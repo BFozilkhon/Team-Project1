@@ -8,7 +8,8 @@ export const Container = styled.div`
   @media screen and (max-width: 1700px)  {.account-img{ width: 70px;height: 70px;}}
   @media screen and (max-width: 1500px)  {.account-img{ width: 50px;height: 50px;}}
   @media screen and (max-width: 1000px)  {.account-img{ margin: 40px 0 20px 0; width: 150px;height: 150px; } padding: 7%}
-  @media screen and (max-width: 767px)  { padding: 0}
+  @media screen and (max-width: 767px)  { padding: 80px  0 0  0}
+
 `
 
 export const Wrapper = styled.div`

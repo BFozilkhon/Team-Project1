@@ -6,7 +6,8 @@ export const Container = styled.div`
   width: 100%;
   max-width: 1920px;
   padding: 0 2%;
-  @media screen and (max-width: 1000px)  { padding: 0 5%}
+  padding-top: 40px;
+  @media screen and (max-width: 1000px)  { padding: 50px 0 0 5%}
 `
 
 export const Name = styled.div`
@@ -79,6 +80,7 @@ display: flex;
 padding: 40px 0;
 flex-direction: column;
 align-items: center;
+a{color: #fff}
 `
 LearnMore.Text = styled.div`
 font-family: 'Inter';
@@ -86,7 +88,7 @@ font-weight: 400;
 font-size: 24px;
 text-align: center;
 margin: 0 20%;
-color: #FFFFFF;
+color: #fff;
 @media screen and (max-width: 1000px)  {font-size: 24px; margin: 5%}
 `
 LearnMore.Btn = styled.div`

@@ -7,6 +7,9 @@ export const Container = styled.div`
   margin: 120px 0 30px 0;
   justify-content: center;
   align-items: center;
+  padding-top: 80px;
+  @media screen and (max-width: 767px) {}
+
 `
 export const Name = styled.div`
   display: flex;

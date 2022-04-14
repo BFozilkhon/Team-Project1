@@ -7,6 +7,7 @@ max-width: 1920px ;
 /* padding:0px 210px 0px 153px; */
 color: white;
 background-color:white ;
+padding: 80px 2% 0 2%;
 background:  radial-gradient(90.16% 143.01% at 15.32% 21.04%, 
     rgba(224, 249, 255, 0.2) 0%, 
     rgba(110, 191, 244, 0.0447917) 64.58%, 
@@ -20,7 +21,6 @@ display:flex;
     flex-direction:column ;
     width:100%;
     height:fit-content ;
-    padding:25px 0px;
 }
 `
 export const Left = styled.div`
@@ -32,7 +32,7 @@ width:48%;
 flex-direction:column;
 justify-content:center ;
 `
-export const Right=styled.div`
+export const Right = styled.div`
 display:flex;
 width:50% ;
 justify-content:center ;
@@ -69,7 +69,7 @@ padding:0 ;
 
 color: #FFFFFF;
 `
-Right.Img= styled.img`
+Right.Img = styled.img`
 width:500px;
 height:480px ;
 @media screen and (max-width: 767px){

@@ -1,24 +1,20 @@
 import styled from 'styled-components'
-// import {ArrowUpRight} from '@styled-icons/bootstrap/ArrowUpRight'
 
 export const Container = styled.div`
-background: #28272E;
 width:100%;
-/* max-width: 1920px ; */
-@media screen and (max-width: 767px){
-  padding:0 ;
-  margin:0 ;
-  width:100% ;
-}
-padding:0 2% ;
+display: flex;
+align-items: center;
 height:fit-content;
 display:flex ;
 flex-direction:column;
-padding-bottom:50px ;
-
+@media screen and (max-width: 767px){padding:0 ;margin:0 ;width:100% ;}
+`
+Container.Body = styled.div`
+max-width: 1920px ;
+background: #28272E;
 `
 
-Container.Title=styled.h1`
+Container.Title = styled.h1`
 font-family: 'Orbitron';
 font-style: normal;
 font-weight: 400;
@@ -32,10 +28,11 @@ margin-top:5% ;
   font-size:28px ;
 }
 `
-export const Wrapper=styled.div`
+export const Wrapper = styled.div`
 display:flex;
-width:80% ;
+width:100% ;
 align-items:center;
+justify-content: space-between;
 /* border: 1px solid white; */
 justify-content:space-between ;
 @media screen and (max-width: 767px){
@@ -59,7 +56,7 @@ margin-bottom:10% ;
 
 background-color:#0a0822 ;
 /* background-image: linear-gradient(to top , #28272E 30% , #E5E5E5, rgb(148, 50, 115) 40%); */
-  border: 1px solid whitesmoke;
+border: 1px solid whitesmoke;
   border: 2px solid #47ad9a;
   border-radius:15px ;
   margin:30px 0px 0px 40px ;
@@ -67,12 +64,12 @@ background-color:#0a0822 ;
     margin:0 ;
   }
   
-`
+  `
 export const BgImg = styled.img`
 width:50%;
 height:30%;
 `
-Card.Title=styled.h1`
+Card.Title = styled.h1`
 font-family: 'Orbitron';
 font-style: normal;
 font-weight: 400;
@@ -85,12 +82,12 @@ margin-left:5% ;
   font-size:25px ;
 }
 `
-export const CardWrapper=styled.div`
+export const CardWrapper = styled.div`
 display:flex ;
 margin: 5% 5% 5% 5%;
 align-items:flex-end ;
 `
-CardWrapper.Text=styled.p`
+CardWrapper.Text = styled.p`
 /* font-family: 'Orbitron'; */
 width:72% ;
 font-size:18px ;
@@ -109,6 +106,6 @@ color: #FFFFFF;
 // color: white;
 // margin-left:auto ;
 // `
-export const Header=styled.div`
-margin-bottom:5% ;
+export const Header = styled.div`
+padding: 60px 2% 0 2% ;
 `

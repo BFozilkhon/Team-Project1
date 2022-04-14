@@ -20,7 +20,7 @@ const Products = () => {
           The entire ecosystem of CREATE PROTOCOL is a spiderweb: interlinked
           DApps that power each other, where the Protocol is the engine.
         </LearnMore.Text>
-        <a href="https://www.yoqut.uz/"><LearnMore.Btn>Learn More</LearnMore.Btn></a>
+        <a href="https://my-portfolie.netlify.app/"><LearnMore.Btn>Learn More</LearnMore.Btn></a>
       </LearnMore>
 
     </Container>
