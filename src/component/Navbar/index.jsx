@@ -1,22 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
+import { Pro } from '../../context/isopen'
 import { Nav, Logo, NavItems, Bar, Bars } from "./style";
 
-export const Navbars = ({ isOpen, setIsopen, click, setClick }) => {
+export const Navbars = () => {
+  const [click] = useState(false)
+  const [isOpen, setIsopen] = useContext(Pro)
   return (
-    <Nav click={click}>
+    < Nav click={click} >
       <NavItems logo>
-        <Logo click={click} />
+        <Link to={"/"}> <Logo click={click} />
+        </Link>
       </NavItems>
       <NavItems>
-        <a href="#home">
+        <a href="#">
           <NavItems.Text>Home</NavItems.Text>
         </a>
         <a href="#developer">
           <NavItems.Text>Developer</NavItems.Text>
-        </a>
-        <a href="#creator">
-          <NavItems.Text>Creator</NavItems.Text>
         </a>
         <a href="#ecosystem">
           <NavItems.Text>Ecosystem</NavItems.Text>
@@ -36,7 +37,7 @@ export const Navbars = ({ isOpen, setIsopen, click, setClick }) => {
         <Bars b={isOpen} />
         <Bars c={isOpen} />
       </Bar>
-    </Nav>
+    </Nav >
   );
 };
 export default Navbars;

@@ -4,9 +4,10 @@ import { ReactComponent as arrowmini } from "../../assets/icons/arrow-right.svg"
 export const Container = styled.div`
   width: 100%;
   max-width: 1920px;
-  margin: 30px 0;
   justify-content: center;
   align-items: center;
+  padding: 70px 0 0 0;
+
 `
 export const Name = styled.div`
   display: flex;

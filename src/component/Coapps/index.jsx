@@ -3,7 +3,7 @@ import { data } from "../../mock/card";
 import { Container, Cards, Card, Name, ArrowMini } from "./style";
 const Coapps = () => {
   return (
-    <Container id="creator">
+    <Container id="developer">
       <Name>
         <Name.Title>COapps Ecosystem</Name.Title>
         <Name.Next>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import opener from "../../assets/imgs/opener.png";
 import background from '../../assets/imgs/background.png'
 export const Container = styled.div`
   width: 100%;
@@ -6,6 +7,7 @@ export const Container = styled.div`
   max-height: 1200px;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 80px;
   background: url(${background});
 `;
 //sign
@@ -66,11 +68,27 @@ Header.Card = styled.div`
   justify-content: ${({ img }) => img && 'center'};
   flex: 1;
   img{width: 100%; margin:20%; border-radius: 33px;}
-  @media screen and (max-width: 1500px)  {img{height: 300px}}
-  @media screen and (max-width: 1366px)  {img{height: 260px;}}
-  @media screen and (max-width: 1180px)  { img{height: 230px; margin: 0}};
-  @media screen and (max-width: 1000px)  { display: ${({ img }) => img && 'none'};}
+
 `
+export const Img = styled.div`
+width: 100%;
+height: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 33px;
+background-repeat: no-repeat;
+background-size: contain;
+background: url(${opener});
+img{
+  width: 100px;
+}
+@media screen and (max-width: 1200px)  {height: 300px;}
+@media screen and (max-width: 1200px)  {height: 250px;}
+@media screen and (max-width: 1000px)  {display: none}
+ 
+`
+
 Header.Card.Name = styled.div`
   font-family: 'Orbitron';
   font-weight: 800;

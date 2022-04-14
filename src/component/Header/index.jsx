@@ -1,33 +1,13 @@
 import React, { useState } from "react";
-import opener from "../../assets/imgs/opener.png";
-import Sidebars from "./Sidebar";
-import Navbars from "./Navbar";
-import { Container, Sign, Header, Title } from "./style";
+import opener from "../../assets/imgs/yotubes.png";
+import { Container, Img, Header, Title } from "./style";
 
 export const Navbar = () => {
   const [isOpen, setIsopen] = useState(false);
   const [click, setClick] = useState(false);
   return (
-    <Container id="home">
-      <Sign click={click}>
-        <Sign.Text>
-          Be a early member of Creator Console to join the revolution
-        </Sign.Text>
-        <Sign.Btn onClick={() => setClick(!click)}>SIGN UP</Sign.Btn>
-      </Sign>
+    <Container id="">
 
-      <Sidebars
-        isOpen={isOpen}
-        setIsopen={setIsopen}
-        click={click}
-        setClick={setClick}
-      />
-      <Navbars
-        isOpen={isOpen}
-        setIsopen={setIsopen}
-        click={click}
-        setClick={setClick}
-      />
 
       <Header>
         <Header.Card>
@@ -56,7 +36,7 @@ export const Navbar = () => {
         </Header.Card>
 
         <Header.Card img>
-          <img src={opener} alt="" />
+          <Img ><img src={opener} alt="" /></Img>
         </Header.Card>
       </Header>
     </Container>

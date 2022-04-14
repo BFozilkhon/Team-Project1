@@ -1,18 +1,21 @@
 import styled from "styled-components";
-import { ReactComponent as logo } from "../../../assets/icons/logo.svg";
+import { ReactComponent as logo } from "../../assets/icons/logo.svg";
 
 //navbar
 export const Nav = styled.div`
   width: 100%;
+  height: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1920px;
-  padding:  2%;
-  backdrop-filter: blur(8px);
+  padding: 0  2%;
+  background: rgba(26, 21, 59, 0.48);
+  position: fixed;
+  backdrop-filter: blur(6px);
   margin: auto;
   @media screen and (max-width: 1366px)  { margin-top: 0px;}
-  @media screen and (max-width: 767px)  {  margin-top: ${({ click }) => click ? '0' : '35px'}; position: fixed; background: #0a0822; }
+  @media screen and (max-width: 767px)  {  background: #0a0822; }
 `;
 //navitems
 export const NavItems = styled.div`
@@ -76,5 +79,4 @@ export const Bars = styled.div`
 export const Logo = styled(logo)`
   @media screen and (max-width: 1366px)  {width: 340px;}
   @media screen and (max-width: 1000px)  {width: 280px;}
-  @media screen and (max-width: 767px)  {width: 220px;   margin-bottom: ${({ click }) => click ? '0px' : '5px;'};}
 `
