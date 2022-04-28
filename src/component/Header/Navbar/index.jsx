@@ -1,30 +1,33 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Nav, Logo, NavItems, Bar, Bars } from "./style";
 
 export const Navbars = ({ isOpen, setIsopen, click, setClick }) => {
+  const navigate = useNavigate();
   return (
     <Nav click={click}>
       <NavItems logo>
-        <Logo click={click} />
+        <Link to={"/"}>
+          <Logo click={click} />
+        </Link>
       </NavItems>
       <NavItems>
-        <a href="#home">
+        <a onClick={() => navigate("/")} href="#home">
           <NavItems.Text>Home</NavItems.Text>
         </a>
-        <a href="#developer">
+        <a onClick={() => navigate("/")} href="#developer">
           <NavItems.Text>Developer</NavItems.Text>
         </a>
-        <a href="#creator">
+        <a onClick={() => navigate("/")} href="#creator">
           <NavItems.Text>Creator</NavItems.Text>
         </a>
-        <a href="#ecosystem">
+        <a onClick={() => navigate("/")} href="#ecosystem">
           <NavItems.Text>Ecosystem</NavItems.Text>
         </a>
-        <a href="#about">
+        <a onClick={() => navigate("/")} href="#about">
           <NavItems.Text>About us</NavItems.Text>
         </a>
-        <a href="#recourses">
+        <a onClick={() => navigate("/")} href="#recourses">
           <NavItems.Text>Resources</NavItems.Text>
         </a>
         <Link to={"/white-paper"}>

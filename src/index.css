@@ -7,10 +7,18 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
-::-webkit-scrollbar { width: 7px;height: 0px;}
-::-webkit-scrollbar-thumb {background: transparent;}
-::-webkit-scrollbar-thumb:hover {background: #6495ED;}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6495ed;
+}
 body {
   scroll-behavior: smooth;
   background: #0a0822;
