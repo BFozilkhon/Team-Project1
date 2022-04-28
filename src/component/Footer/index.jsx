@@ -1,7 +1,6 @@
 import {
   Container,
   Card,
-  Input,
   Btn,
   FooterIcon,
   Instagram,

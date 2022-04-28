@@ -18,7 +18,7 @@ const Products = () => {
             {account.map((v, i) => {
               return (
                 <Produc.Card key={v.id}>
-                  <img src={v.img} className="account-img" />
+                  <img src={v.imgs} className="account-img" alt="img" />
                   <Produc.Name a={i % 1 === 0} b={i % 2 === 0} c={i % 3 === 0}>
                     {v.header}
                   </Produc.Name>
